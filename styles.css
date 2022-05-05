@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    position: relative;
+    height: 115vh;
+    overflow-x: hidden;
+
+}
+
+#container {
+    display: flex;
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    top: 13vh;
+    margin-right: 30vw;
+}
+
+#logo {
+    height: 70px;
+    width: 198px;
+    margin: -20px;
+}
+
+#section-1>#title {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#section-1>#subtitle {
+    color: #606770;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#cards {
+    display: flex;
+}
+
+#card-1,
+#card-2 {
+    position: relative;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 180px;
+    height: 250px;
+    text-align: center;
+}
+
+#card-1:hover,
+#card-2:hover {
+    box-shadow: 2px 8px 10px gainsboro;
+    cursor: pointer;
+    transition: box shadow 0.3s;
+}
+
+#profile-img {
+    width: 180px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+#add-img {
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#txtadd {
+    color: blue;
+}
+
+.cardtxt {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: rgb(75, 79, 86);
+}
+
+#cancel {
+    position: relative;
+    left: 6px;
+    color: white;
+    top: 5px;
+    border-radius: 50%;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    background-color: rgb(63, 62, 62);
+}
+
+#card-1:hover #cancel {
+    position: relative;
+    left: -2px;
+    top: -2px;
+    border-radius: 50%;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    background-color: white;
+    color: black;
+}
+
+#section-2 {
+    position: relative;
+    background-color: #fff;
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 18vh;
+    justify-content: flex-start;
+    padding: 10px 10px 20px 10px;
+    align-items: center;
+    box-shadow: 2px 8px 10px gainsboro;
+}
+
+#section-2 > a {
+    margin: 18px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #1877f2;
+}
+
+#section-2 > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr{
+    width: 95%;
+    height: 0.1%;
+    background-color: rgb(237, 231, 231);
+    border: none;
+}
+
+.field {
+    height: 35%;
+    margin: 8px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 95%;
+    border: 1.5px solid #eeeff0;
+}
+
+.field:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #719ece;
+}
+
+#btn-login{
+    margin-top: 12px;
+    background-color: #1877f2;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    height: 120px;
+    font-weight: bold;
+    width: 95%;
+}
+
+#btn-login:hover{
+    background-color: #166fe5;
+}
+
+#btn-acount{
+    background-color: #42b72a;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    height: 100px;
+    font-weight: bold;
+    width: 60%;
+    margin-top:20px;
+}
+
+#btn-acount:hover{
+    background-color: #36a420;
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    position: absolute;
+    bottom: -55px;
+}
+
+footer{
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px;
+    color: #a6a8aa;
+    font-size: 12px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    list-style: 20px;
+}
+
+@media screen and (max-width:1114px) {
+    #section-1{
+        left:70px;
+        margin-right: 22vw;
+    }
+    #section-2{
+        right: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body{
+        height:150vh;
+    }
+    #container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-1{
+        margin-right: 0;
+        align-items: center;
+        left:0;
+        top:20px;
+    }
+
+    #card-1{
+        margin-right: 5px;
+    }
+
+    #card-2{
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    #section-2{
+        text-align: center;
+        left:0;
+        margin-right: 0;
+        margin-top: -30px;
+        top:80px;
+    }
+
+    #section-1,#section-2{
+       position: relative;
+    }
+
+    footer{
+        position: absolute;
+        padding: 20px;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-height:670px) {
+    footer{
+        position: relative;
+        top: 100px;
+    }
+}
+
+
+
+
+
