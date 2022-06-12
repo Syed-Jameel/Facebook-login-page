@@ -298,13 +298,10 @@ footer {
     #attribution-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content:center;
     align-items: center;
 }
     
-    #attribution-container span {
-    display:block;  
-}
 
 @media screen and (max-height:670px) {
     footer {
