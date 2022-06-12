@@ -301,7 +301,9 @@ footer {
     justify-content: left;
     align-items: center;
 }
-
+    
+    #attribution-container span {
+    display: inline-block;  
 }
 
 @media screen and (max-height:670px) {
