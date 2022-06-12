@@ -78,6 +78,7 @@ body {
     margin-bottom: 15px;
     margin-top: -20px;
 }
+
 #add-img {
     width: 50%;
     margin-top: 60px;
@@ -134,19 +135,19 @@ body {
     box-shadow: 2px 8px 10px gainsboro;
 }
 
-#section-2 > a {
+#section-2>a {
     margin: 18px;
     text-decoration: none;
     font-size: 15px;
     color: #1877f2;
 }
 
-#section-2 > a:hover{
+#section-2>a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-hr{
+hr {
     width: 95%;
     height: 0.1%;
     background-color: rgb(237, 231, 231);
@@ -163,13 +164,13 @@ hr{
     border: 1.5px solid #eeeff0;
 }
 
-.field:focus{
+.field:focus {
     outline: none;
     border: 1px solid blue;
     box-shadow: 0 0 5px #719ece;
 }
 
-#btn-login{
+#btn-login {
     margin-top: 12px;
     background-color: #1877f2;
     color: #ffffff;
@@ -181,11 +182,11 @@ hr{
     width: 95%;
 }
 
-#btn-login:hover{
+#btn-login:hover {
     background-color: #166fe5;
 }
 
-#btn-acount{
+#btn-acount {
     background-color: #42b72a;
     color: #ffffff;
     font-size: 18px;
@@ -194,21 +195,21 @@ hr{
     height: 100px;
     font-weight: bold;
     width: 60%;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-#btn-acount:hover{
+#btn-acount:hover {
     background-color: #36a420;
     cursor: pointer;
 }
 
-p{
+p {
     font-size: 15px;
     position: absolute;
     bottom: -55px;
 }
 
-footer{
+footer {
     background-color: #ffffff;
     position: absolute;
     bottom: 0;
@@ -223,54 +224,73 @@ footer{
     list-style: 20px;
 }
 
+#attribution-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    word-spacing: 0;
+}
+
+.attribution a {
+    color: rgb(50, 142, 235);
+}
+
 @media screen and (max-width:1114px) {
-    #section-1{
-        left:70px;
+    #section-1 {
+        left: 70px;
         margin-right: 22vw;
     }
-    #section-2{
+
+    #section-2 {
         right: 30px;
     }
 }
 
 @media screen and (max-width:900px) {
-    body{
-        height:150vh;
+    body {
+        height: 150vh;
     }
-    #container{
+
+    #container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #section-1{
+
+    #section-1 {
         margin-right: 0;
         align-items: center;
-        left:0;
-        top:20px;
+        left: 0;
+        top: 20px;
     }
 
-    #card-1{
+    #card-1 {
         margin-right: 5px;
     }
 
-    #card-2{
+    #card-2 {
         margin-left: 5px;
         margin-right: 0;
     }
 
-    #section-2{
+    #section-2 {
         text-align: center;
-        left:0;
+        left: 0;
         margin-right: 0;
         margin-top: -30px;
-        top:80px;
+        top: 80px;
     }
 
-    #section-1,#section-2{
-       position: relative;
+    #section-1,
+    #section-2 {
+        position: relative;
     }
 
-    footer{
+    footer {
         position: absolute;
         padding: 20px;
         width: 100vw;
@@ -279,13 +299,8 @@ footer{
 }
 
 @media screen and (max-height:670px) {
-    footer{
+    footer {
         position: relative;
         top: 100px;
     }
 }
-
-
-
-
-
