@@ -303,7 +303,7 @@ footer {
 }
     
     #attribution-container span {
-    display: inline-block;  
+    display:block;  
 }
 
 @media screen and (max-height:670px) {
